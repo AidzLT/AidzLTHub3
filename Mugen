@@ -758,7 +758,7 @@ local Wait = library.subs.Wait
 local Window = library:CreateWindow({
 Name = "AidzLT Hub // Mugen",
 Themeable = {
-Info = "Discord Server: discord.gg/YesH5f2ccN"
+Info = "Discord Server: facebook.com/AidzLT"
 }
 })
 
@@ -1156,6 +1156,11 @@ Miscellaneous:AddToggle({
     end
 })
 
+local Mode = Misc:CreateSection({
+Name = "[Mode]",
+Side = "Right"
+})
+
 Mode:AddToggle({
     Name = "WarDrum Mode",
     Default = false,
@@ -1172,6 +1177,7 @@ Mode:AddToggle({
     end
     })
           
+       
 Mode:AddToggle({
     Name = "Semi Godmode [All Race]",
     Default = false,
@@ -1183,7 +1189,7 @@ Mode:AddToggle({
         end
     end
     })
-	
+    
 local Extra = Misc:CreateSection({
 Name = "[Extra]",
 Side = "Right"
@@ -1291,4 +1297,3 @@ Extra:AddButton({
           end
        end
     })
-
