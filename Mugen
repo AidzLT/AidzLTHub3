@@ -881,40 +881,8 @@ Status:AddDropdown({
                 ContextActionService:UnbindAction("DisableMouseClicks")
             end
 
-            Farm:AddToggle({
-            Name = "Kill Aura [16 Hits]",
-            Flag = "KA",
-            Default = false,
-            Callback = function(value)   
-                    getgenv().KillAura = value
-                    pcall(function(value)
-                        if value then
-                            DisableMouseClicks()
-                        else
-                            EnableMouseClicks()
-                        end
-                    end)   
-                end
-            })
-
 Farm:AddToggle({
-            Name = "Kill Aura [14 Hits]",
-            Flag = "KA",
-            Default = false,
-            Callback = function(value)      
-                    getgenv().SafestKillAura = value   
-                    pcall(function(value)
-                        if value then
-                            DisableMouseClicks()
-                        else
-                            EnableMouseClicks()
-                        end
-                    end)   
-            end
-            })
-
-Farm:AddToggle({
-Name = "Arrow KA",
+Name = "Fuck Shit Die",
 Flag = "GKA",
 Default = false,
 Callback = function(value)
@@ -922,15 +890,7 @@ getgenv().BypassGKA = value
 getgenv().GKA = value
         end
         })
-   
-Farm:AddToggle({
-Name = "Thunder KA",
-Flag = "TKA",
-Default = false,
-Callback = function(value)
-      getgenv().TKA = value
- end
-})      
+
             Farm:AddToggle({
             Name = "Auto Block (No Skills)",
             Flag = "Block",
